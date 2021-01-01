@@ -28,7 +28,7 @@ resource "aws_instance" "default" {
 
 data "aws_security_group" "test" {
   tags = { 
-    "ENVIRONMENT" = "dev"
+    ENVIRONMENT = "dev"
 
   }
 }
