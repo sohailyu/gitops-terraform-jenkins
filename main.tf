@@ -26,6 +26,13 @@ resource "aws_instance" "default" {
   }
 }
 
+data "aws_vpc" "test" {
+  tags = { 
+    Name = New-vpc
+
+  }
+}
+
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
   name = "terraform-default-sg"
