@@ -45,4 +45,4 @@ You can also update the key name to whatever you want your state file to be name
 
 ## Questions?
 
-Open an issue..
+Open an issue...
