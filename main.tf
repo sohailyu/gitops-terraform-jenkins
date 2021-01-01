@@ -26,9 +26,9 @@ resource "aws_instance" "default" {
   }
 }
 
-data "aws_vpc" "test" {
+data "aws_security_group" "test" {
   tags = { 
-    "Name" = "New-vpc"
+    "ENVIRONMENT" = "dev"
 
   }
 }
