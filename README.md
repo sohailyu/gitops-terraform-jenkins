@@ -6,7 +6,7 @@ This repository will demonstrate an example GitOps workflow with Terraform and J
 
 The configuration in this repository was updated and now supports `Terraform v0.12.19`.
 
-Video can be found here:
+Video can be found here::
 
 https://youtu.be/qFjGqPw1NUY
 
