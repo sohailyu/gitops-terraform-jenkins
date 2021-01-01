@@ -33,23 +33,23 @@ data "aws_security_group" "test" {
   }
 }
 
-# Create Security Group for EC2
-resource "aws_security_group" "default" {
-  name = "terraform-default-sg"
-  vpc_id = "vpc-003015a26b18ec19a" #data.aws_vpc.test.id
+# # Create Security Group for EC2
+# resource "aws_security_group" "default" {
+#   name = "terraform-default-sg"
+#   vpc_id = "vpc-003015a26b18ec19a" #data.aws_vpc.test.id
 
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+#   ingress {
+#     from_port   = 80
+#     to_port     = 80
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"]
+#   }
 
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+#   ingress {
+#     from_port   = 22
+#     to_port     = 22
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"]
+#   }
 
-}
+# }
