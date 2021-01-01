@@ -28,7 +28,7 @@ resource "aws_instance" "default" {
 
 data "aws_vpc" "test" {
   tags = { 
-    Name = New-vpc
+    "Name" = "New-vpc"
 
   }
 }
